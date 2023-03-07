@@ -1,0 +1,266 @@
+/* ======= GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+  }
+
+  body {
+    width: 100%;
+    heigth: 100%;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    background: var(--body-bg-color);
+    color: var(--text-color);
+
+  }
+
+  .sidebar {
+    background: var(--green);
+  }
+
+  .footer .log-out  {
+    border: none;
+    background: none;
+  }
+
+  /* --- CLOSE MENU ---- */
+
+  .sidebar {
+    width: 78px;
+  }
+
+  .logo-vet, 
+  .menu-options p, 
+  .footer .avatar, 
+  .footer span {
+    opacity: 0;
+  }
+
+  .footer .avatar {
+    display: none;
+  }
+
+  .footer span {
+    display: none;
+  }
+
+  .menu-button {
+    margin-inline: 26px;
+    margin-bottom: 26px;
+    cursor: pointer;
+  }
+
+  .search {
+    margin-inline: 14px;
+    margin-bottom: 21px;
+  }
+
+  .lupa {
+    background: none;
+    border: none;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin: 13px;
+    cursor: pointer;
+  }
+
+  input {
+    border: none;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    background: var(--light-green);
+    margin-bottom: 20px;
+  }
+
+  input::placeholder {
+    padding-left: 50px;
+  }
+
+  .menu-options {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-left: 27px;
+    padding-bottom: 114px;
+  }
+
+  .footer {
+    display: flex;
+    background: var(--light-green);
+    height: 60px;
+  }
+  
+  .footer .log-out img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-inline: 20px;
+    cursor: pointer;
+  }
+
+  .container, .main {
+    display: flex;
+  }
+
+  .main {
+    margin-left: 18px;
+    margin-top: 18px;
+  }
+
+  /* ---- OPEN MENU ------ */
+
+  .sidebar.active {
+    width: 250px;
+    transition: 400ms;
+  }
+
+  .sidebar.active .logo-vet, 
+  .sidebar.active .menu-options p, 
+  .sidebar.active .footer .avatar, 
+  .sidebar.active .footer span {
+    opacity: 1;
+  }
+
+  .sidebar.active header {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 27px;
+  }
+  
+  .sidebar.active .logo-vet {
+    margin-left: 29px;
+    margin-top: 24px;
+  }
+
+  .sidebar.active .menu-button {
+    margin-top: 26px;
+    margin-right: 14px;
+
+  }
+
+  .sidebar.active .search {
+    margin-inline: 14px;
+  }
+
+  .sidebar.active .lupa {
+    background: none;
+    border: none;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin: 13px;
+    transform: translateX(9.95rem);
+    transition: transform 600ms;
+  }
+
+  .sidebar.active input {
+    border: none;
+    border-radius: 12px;
+    width: 222px;
+    height: 51px;
+    background: var(--light-green);
+    margin-bottom: 20px;
+    transition: 400ms;
+  }
+  
+  input::placeholder {
+    padding-left: 50px;
+  }
+
+  .sidebar.active .menu-options {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-left: 27px;
+    padding-bottom: 206px;
+  }
+
+  .sidebar.active .menu-options a, img, p  {
+    display: flex;
+    gap: 13px;
+  }
+
+  .sidebar.active .menu-options a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .sidebar.active .footer .avatar {
+    display: flex;
+  }
+
+  .sidebar.active .footer span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar.active .footer {
+    display: flex;
+    background: var(--light-green);
+    width: 250px;
+    height: 60px;
+  }
+
+  .sidebar.active .footer .avatar {
+    margin-left: 14px;
+    whidth: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .sidebar.active .footer span {
+    margin-left: 9px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    whidth: 98px;
+    height: 36px;
+  }
+
+  .sidebar.active span p {
+    font-size: 15px;
+  }
+
+  .sidebar.active span p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .sidebar.active .footer .log-out img {
+    width: 24px;
+    height: 24px;
+    margin-top: 20px;
+    margin-right: 13px;
+    margin-left: 40px;
+  }
+
+  .container, .main {
+    display: flex;
+  }
+
+  .main {
+    margin-left: 18px;
+    margin-top: 18px;
+  }
+
+
+
+

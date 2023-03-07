@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+    <header>
+      <div class="logo-vet">
+        <img src="./svg/logo.svg" alt="Logo VET com símbolo de uma pata de cachorro.">
+      </div>  
+      <div class="menu-button" onclick="openCloseSidebar()">
+        <img src="./svg/button-menu.svg" alt="Botão estilo 'hamburguer' para abrir e fechar o menu.">
+      </div>
+    </header>
+
+    <div class="search">
+        <button class="lupa" onclick="openCloseSidebar()">
+            <img src="./svg/lupa.svg" alt="Lupa de busca">
+        </button>
+        <input type="text" placeholder="Buscar">
+    </div>
+
+    <div class="menu-options">
+        <a href="#">
+            <img src="./svg/dashboard.svg" alt="Menu de Opções">
+            <p>Dashboard</p>
+        </a>
+
+        <a href="#">
+            <img src="./svg/pets.svg" alt="Logo de pata de cachorro">
+            <p>Pets</p>
+        </a>
+
+        <a href="#">
+            <img src="./svg/client.svg" alt="Logo de usuário">
+            <p>Clientes</p>
+        </a>
+
+        <a href="#">
+            <img src="./svg/vets.svg" alt="Logo de usuário veterinário">
+            <p>Vets</p>
+        </a>
+
+        <a href="#">
+            <img src="./svg/settings.svg" alt="Logo de configuração / engrenagem">
+            <p>Ajustes</p>
+        </a>
+    </div>
+
+
+        <div class="footer">
+            <img class="avatar" src="./svg/avatar.svg" alt="Mulher de cabelo castanho">
+
+            <span>
+                <p>Eleanor Pena</p>
+                <p>Veterinária</p>
+            </span>
+
+            <button class="log-out" onclick="openCloseSidebar()">
+                <img src="./svg/logout-button.svg" alt="Botão de log-out">
+            </button>
+        </div>
+    </div>
+        <div class="main">
+            <h2>Dashboard</h2>
+        </div>
+    </div>
+  
+    <script src="./main.js"></script>
+</body>
+</html>
